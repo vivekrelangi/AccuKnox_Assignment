@@ -1,5 +1,5 @@
 # AccuKnox_Assignment
-Created to post answers for an assignment.
+Created to post answers for an assignment. Answers for the assignment are written in docstrings of the respective files with question numbers as file names.
 
 To run the codes in Question1.py, Question2.py and Question3.py files, you need to follow these steps:
 
