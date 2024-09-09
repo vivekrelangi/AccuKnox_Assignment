@@ -1,0 +1,2 @@
+"""Answer: Yes, by default, Django signals run in the same database transaction as the caller if the signals are triggered inside a transaction block. If the transaction is rolled back, the changes made by the signal will also be rolled back. In the below code, even though the signal handler changes the username to "modified_user" and saves it, the entire transaction is rolled back due to the exception. As a result, the change made by the signal handler is also rolled back, which confirms that signals run in the same transaction.
+"""
