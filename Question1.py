@@ -1,4 +1,4 @@
-"""Answer: By default, Django signals are executed synchronously. This means that the signal handlers are called immediately in the same flow of execution, and they block further execution of the code until they finish. In the below code, when User.objects.create is called, the post_save signal is triggered synchronously, and the execution of the view is blocked until the signal handler finishes its execution. The After user creation print statement will only appear after the signal handler completes."""
+"""Answer: By default, Django signals are executed synchronously. This means that the signal handlers are called immediately in the same flow of execution, and they block further execution of the code until they finish. To run the below code follow steps given in README.md file of the repo. In the below code, when User.objects.create is called, the post_save signal is triggered synchronously, and the execution of the view is blocked until the signal handler finishes its execution. The After user creation print statement will only appear after the signal handler completes."""
 
 # signals.py
 from django.db.models.signals import post_save
